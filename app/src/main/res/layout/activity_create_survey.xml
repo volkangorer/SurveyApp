@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSurveyActivity"
+    android:orientation="vertical"
+    android:background="#F3EDED">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anket Oluştur"
+        android:background="#21AF8E"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        >
+
+    </TextView>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Anket Adı"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        >
+
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/surveyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Anket Adı"
+        android:layout_marginHorizontal="20dp"
+        >
+
+    </EditText>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Açıklama"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        >
+
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Açıklama Giriniz"
+        android:layout_marginHorizontal="20dp"
+        >
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Başlangıç Tarihi :"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+
+                >
+
+            </TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start"
+                android:text="seçiniz"
+                android:layout_gravity="center"
+
+                android:minHeight="0dp"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Bitiş Tarihi :"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"
+
+                >
+
+            </TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/finish"
+                android:text="seçiniz"
+                android:layout_gravity="center"
+                android:minHeight="0dp"
+
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Kaydet"
+        android:id="@+id/save"
+        android:layout_marginTop="30dp"
+        android:onClick="saveOnClicked"
+        ></Button>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#F3EDED"
+
+
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoşgeldiniz bla bla"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:id="@+id/user"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/createSurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="createOnClicked"
+                android:text="Anket Oluştur"
+                android:layout_gravity="center"
+
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anket Adı, Açıklama, Baş. Tarihi, Bitiş Tarihi"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+
+        <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/creating"
+                android:layout_weight="1"
+                android:onClick="createOnClicked"
+                android:layout_gravity="center"
+
+                >
+           </ImageView>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/showSurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:onClick="showOnClicked"
+                android:text="Anket Göster"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/createSurvey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anket Adı, Yönetme, Silme"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/showing"
+            android:layout_weight="1"
+            android:onClick="showOnClicked"
+            android:layout_gravity="center"
+
+            >
+        </ImageView>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/mySurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="sendSurveyOnClicked"
+                android:text="Anket Gönder"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cihaz Adı, Durum, Hareket"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sendsurvey"
+            android:layout_weight="1"
+            android:onClick="sendSurveyOnClicked"
+            android:layout_gravity="center"
+
+            >
+        </ImageView>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="staOnClicked"
+                android:text="İstatistikler"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anket Adı, Hazırlanma Tarihi, İşlem"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chart"
+            android:layout_weight="1"
+            android:onClick="staOnClicked"
+            android:layout_gravity="center"
+
+            >
+        </ImageView>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

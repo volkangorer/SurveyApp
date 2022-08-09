@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuestionActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soru"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Soruyu Buraya Giriniz"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seçenek Tipi"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginHorizontal="20dp"
+
+
+         >
+
+        <RadioButton
+            android:id="@+id/twoOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emoji 1 (2 seçenek)"
+            />
+
+        <RadioButton
+            android:id="@+id/threeOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emoji 2 (3 seçenek)" />
+
+        <RadioButton
+            android:id="@+id/fiveOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emoji 3 (5 seçenek)" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:id="@+id/saveQuestion"
+            android:onClick="saveOnClicked">
+
+        </Button>
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çıkış"
+            android:id="@+id/exit"
+            android:onClick="exitOnClicked">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

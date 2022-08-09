@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+
+            android:rowCount="1"
+            android:columnCount="4">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:id="@+id/surveyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Anket 1"
+                android:textColor="@color/black"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/show"
+                android:src="@drawable/settings"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:onClick="detailOnClicked">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete"
+                android:src="@drawable/delete"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:onClick="deleteOnClicked">
+
+            </ImageView>
+
+
+        </GridLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

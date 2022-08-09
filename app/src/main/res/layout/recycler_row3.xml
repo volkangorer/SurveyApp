@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_row="1"
+    android:layout_column="3"
+    android:layout_marginVertical="5dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cihaz Adı"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:id="@+id/deviceName"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Durum"
+        android:textSize="16dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:id="@+id/status"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            android:background="#6DC847"
+            android:layout_gravity="center"
+            android:onClick="addSurveyOnClicked"
+            android:layout_weight="1"
+            android:id="@+id/addSurvey"
+            >
+
+        </ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:onClick="deleteSurveyOnClicked"
+            android:id="@+id/delete3"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+</GridLayout>

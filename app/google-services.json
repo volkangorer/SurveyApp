@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "23076870768",
+    "project_id": "surveyapp-90a28",
+    "storage_bucket": "surveyapp-90a28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23076870768:android:90bf9d9d651baa2f5432b5",
+        "android_client_info": {
+          "package_name": "com.volkangorer.surveyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23076870768-1ev2d38foipvd1kamsnlh22j5jgktppk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2Zi1OEhMYE0NvR7spY6mxGIDhHCAErG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23076870768-1ev2d38foipvd1kamsnlh22j5jgktppk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
